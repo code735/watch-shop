@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    --font1:'Josefin Sans', sans-serif;
+    --back:#f0f0f2;
+    --white:white;
+    --black:black;
+    --grey:#4a4a4b;
+    --btn-red:#ff2020;
+    --h3-blue:#0b1c39;
+    --head-back:#ffffffbf;
+}
+*{
+    font-size: 16px;
+    font-family: var(--font1);
+}
+.mob-bar i{
+    font-weight: bold;
+    font-size: 1.5em;
+    color:var(--black);
+}
+
+header{
+    z-index: 2;
+    background-color:var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+.nav-links{
+    width: 515px;
+    justify-content: space-between;
+    display: flex;
+}
+.nav-icons{
+    width: 106px;
+    display: flex;
+    justify-content: space-between;
+}
+/*hero-sec*/
+.hero-sec{
+    background-color:var(--back);
+}
+.red-watch{
+    overflow: hidden;
+}
+.red-watch-img{
+    height: 100vh;
+}
+
+.hero-sec h3{
+    font-size: 2.5em;
+    color: var(--h3-blue);
+}
+
+.hero-sec h3{
+    font-weight: 800;
+}
+
+.hero-sec p{
+    font-size: 1em;
+}
+
+.hero-sec a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    background-color:var(--grey);
+    width: 141px;
+}
+
+/*New Arrivals*/
+.new-arrivals figcaption{
+    text-align: center;
+    margin: 30px;
+}
+
+.new-arrivals img{
+    width: 100%;
+    height: 100%;
+}
+.new-arrivals h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+/*gallary*/
+.gallary .col-12{
+    overflow: hidden;
+}
+
+.gallary img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Popular Items*/
+.popular-items h3{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.popular-items figure img{
+    width:100%;
+    height:100%;
+}
+
+.popular-items figure h3{
+    font-size: 1.5em;
+}
+
+.popular-items figcaption{
+    text-align: center;
+    padding-top: 10px !important;
+    border-top: 4px solid red !important;
+}
+
+.popular-items-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.popular-items-btn a{
+    background-color:var(--btn-red);
+    padding: 20px;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+/*Video*/
+.video-area i{
+    color: var(--white);
+    font-size: 5em;
+}
+.video-area{
+    background-image: url(../images/background/video-back.webp);
+    text-align: center;
+}
+.play-btn{
+    padding-top: 50vh;
+}
+
+.nxt-video{
+    background-color: var(--btn-red);
+}
+.nxt-video i{
+    font-size: 1.3em;
+}
+
+.nxt-video h3{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1em;
+    margin:0;
+}
+
+/*Choice Watch*/
+.cw-text a{
+    padding: 15px 20px;
+    background-color:var(--btn-red);
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.cw-text p{
+    color: var(--grey);
+}
+
+
+/*Features Section*/
+.features i{
+    color: var(--white);
+    font-size: 2.2em;
+}
+.features .row{
+    background-color:var(--btn-red);
+}
+
+.features h3{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.features p{
+    color: var(--white);
+    font-size: 1em;
+}
+
+
+/*Footer*/
+.icons-copyright p{
+    font-size: 1em;
+}
+
+footer h3{
+    text-transform: capitalize;
+    color: var(--black);
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 0.8em;
+}
+.icons-copyright .logo{
+    width: 270px;
+}
+
+.icons-copyright i{
+    color: var(--btn-red);
+}
+
+/************* 7 6 8 p x  d e v i c e s*************/
+@media(min-width:768px){
+
+    /*Hero Section*/
+    .hero-sec img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .red-watch{
+        width: 50% !important;
+        left: 325px;
+        top: -161px;
+    }
+
+    .hero-sec .row{
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    /*choice watch*/
+    .cw-text, .cw-img{
+
+        width: 50% !important;
+
+    }
+
+    /*Footer*/
+    .icons-copyright .logo {
+        width: 150px;
+    }
+
+    .copyright-para{
+        width: 400px;
+    }
+}
+
+
+/********** 9 9 3 p x  d e v i c e s **************/
+ @media(min-width:993px){
+    .hero-sec .col-9{
+        margin-left: 67px;
+    }
+
+    .red-watch{
+        width: 30% !important;
+        left: 572px;
+        top: -69px;
+    }
+
+    .features .row{
+        padding: 37px;
+    }
+    .foot-logo{
+        margin-bottom: 16px;
+    }
+    .copyright-para{
+        width: 600px;
+    }
+ }
+
+ @media(min-width:1200px){
+    .red-watch {
+        width: 32% !important;
+        left: 788px;
+        top: -87px;
+    }
+
+    .hero-sec h3{
+        font-size: 4.5em;
+    }
+
+    .hero-sec p {
+        font-size: 1.5em;
+    }
+ }
