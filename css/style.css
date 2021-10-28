@@ -46,6 +46,7 @@ header a{
 }
 .red-watch{
     overflow: hidden;
+    width: 53%;
 }
 .red-watch-img{
     height: 100vh;
